@@ -1,0 +1,77 @@
+@font-face {
+    font-family: f1;
+    src: url(../fonts/impact.ttf);
+}
+body{
+    background-image: linear-gradient(45deg, blue,  pink, yellow, red, pink);
+    height: 100vh;
+}
+
+p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: aquamarine;
+    text-shadow: 1px 1px 0 #123;
+    animation: anim 2000ms linear infinite;
+    font-family: f1;
+    letter-spacing: 2px;
+}
+
+@keyframes anim
+ {
+0% {color: azure; }
+
+20% {color: blueviolet; }
+
+40% {color: aqua; }
+
+60% {color: blanchedalmond; }
+
+80% {color: orange; }
+
+100% {color: violet;}
+
+    }
+
+img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: 2s;
+}
+div{
+    border: 5px dotted #fff;
+    width: 500px;
+    text-align: center;
+    margin: 10px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: anim 5s linear infinite;
+
+}
+
+img:hover{
+    transform: rotate(720deg);
+    transition: 2s;
+
+}
+
+span {
+    position: absolute;
+    top: 112px;
+    left: 3%;
+    color: yellow;
+    font-size: 48px;
+    text-shadow: 1px 1px #123;
+    animation: anim 1s linear infinite;
+    font-family: f1;
+}
+
+section {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
